@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/6srh3efya6r3yipa?svg=true)](https://ci.appveyor.com/project/shayu78/ra-decomposition)
 Декомпозиция
 ===
 
