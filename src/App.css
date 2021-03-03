@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.page__wrapper {
+  width: 1000px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.top__block,
+.middle__block,
+.bottom__block {
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.middle__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.bottom__block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.latest__block {
+  width: 75%;
+  height: 100%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.newsfilter__datetime__block {
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.news__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.news__filter__items {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.news__filter__item {
+  padding: 0 5px;
+  margin-right: 5px;
+}
+
+.news__filter__item:last-child {
+  margin-right: 0;
+}
+
+.news__filter__item__link {
+  text-decoration: none;
+}
+
+.date__time {
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.list__items {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  list-style-type: none;
+}
+
+.list__item {
+  margin-bottom: 5px;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.list__item:last-child {
+  margin-bottom: 0;
+}
+
+.list__item__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list__item__image {
+  display: block;
+  margin-right: 5px;
+}
+
+.list__item__time {
+  margin-right: 5px;
+}
+
+.list__item__title {
+  margin-right: 5px;
+}
+
+.list__item__text {
+  color: gray;
+}
+
+.stocks {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.stocks__items {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stocks__item {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+}
+
+.stocks__item:last-child {
+  margin-right: 0;
+}
+
+.stocks__item__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.stocks__item__value{
+  margin-right: 5px;
+}
+
+.stocks__item__delta {
+  color: gray;
+}
+
+.stocks__item__delta__unit {
+  color: gray;
+}
+
+.teaser {
+  width: 25%;
+  height: 100%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.teaser__image {
+  display: block;
+}
+
+.teaser__link {
+  text-decoration: none;
+}
+
+.teaser__title {
+  color: #000000;
+}
+
+.teaser__description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 240px;
+}
+
+.search__block {
+  width: 100%;;
+}
+
+.search__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.search__filter__items {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search__filter__item {
+  padding: 0 5px;
+  margin-right: 5px;
+}
+
+.search__filter__item:last-child {
+  margin-right: 0;
+}
+
+.search__filter__item__link {
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+.form__input__container {
+  width: 85%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form__input {
+  width: 100%;
+  padding: 5px;
+  outline: 0;
+  border: 2px solid #ffd85d;
+}
+
+.form__button {
+  width: 70px;
+  padding: 5px;
+  outline: 0;
+  border: 2px solid #ffd85d;
+  background-color: #ffd85d;
+}
+
+.search__hint {
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.search__static__hint__text {
+  color: #000000;
+}
+
+.search__dynamic__hint__text {
+  color: grey;
+}
+
+.banner {
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.banner__image {
+  display: block;
+  height: 60px;
+}
+
+.banner__link {
+  text-decoration: none;
+}
+
+.first__column,
+.second__column,
+.third__column {
+  width: 33.3%;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.third__column {
+  margin-right: 0;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.widget:last-child {
+  margin-bottom: 0;
+}
+
+.widget__link {
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.widget__header {
+  font-weight: 700;
+}
+
+.weather {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.weather__state__icon {
+  margin-right: 5px;
+}
+
+.weather__currtemperature {
+  font-weight: 700;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.weather__ondaytemperature__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.weather__ondaytemperature {
+  color: #000000;
+}
+
+.schedule {
+  text-decoration: none;
+}
+
+.broadcast__view {
+  position: absolute;
+  right: 80px;
+  top: 5px;
+  width: 70px;
+  height: 25px;
+  background-color: #64b0fb;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.normal {
+  color: #000000;
+}
